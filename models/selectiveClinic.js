@@ -22,11 +22,11 @@ module.exports = class SelectiveClinic extends Sequelize.Model{
                 allowNull : false,
             },
             x : {                       
-                type : Sequelize.DOUBLE.UNSIGNED,
+                type : Sequelize.STRING(40),
                 allowNull : false,
             },
             y : {                       
-                type : Sequelize.DOUBLE.UNSIGNED,
+                type : Sequelize.STRING(40),
                 allowNull : false,
             },
         },         
