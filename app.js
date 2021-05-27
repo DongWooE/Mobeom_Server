@@ -19,6 +19,8 @@ sequelize.sync({ force: false })
     console.error(err);
   })
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true} ));
 app.use(morgan('dev'));
 app.use('/', router);
 
