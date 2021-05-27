@@ -5,6 +5,7 @@ const { readdirSync } = require('fs');
 const path = require('path');
 
 const SelectiveClinic = require('./selectiveClinic');
+const UserInfo = require('./userInfo');
 
 const db = {};
 
@@ -18,6 +19,7 @@ const sequelize = new Sequelize(
 db.sequelize = sequelize;
 
 db.SelectiveClinic = SelectiveClinic;
+db.UserInfo = UserInfo;
 
 SelectiveClinic.init(sequelize);
 
