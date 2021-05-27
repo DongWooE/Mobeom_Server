@@ -22,10 +22,12 @@ module.exports = class UserInfo extends Sequelize.Model{
             firstInjection : {
                 type : Sequelize.STRING(20),
                 allowNull : false,
+                default : null
             },
             secondInjection : {                       
                 type : Sequelize.STRING(40),
                 allowNull : false,
+                default : null
             }
         },         
         {

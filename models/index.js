@@ -22,6 +22,7 @@ db.SelectiveClinic = SelectiveClinic;
 db.UserInfo = UserInfo;
 
 SelectiveClinic.init(sequelize);
+UserInfo.init(sequelize);
 
 db.sequelize.query('SELECT * FROM test1.selectiveclinics')
 .then((row)=>{ 
