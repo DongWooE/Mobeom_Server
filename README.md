@@ -22,7 +22,7 @@ Getting Start
 -------
 souce code for starting the server is in /index.js 
 ```js
-node index.js
+node app.js
 ````
 or if you installed nodemon 
 ```js
